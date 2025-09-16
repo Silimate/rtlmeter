@@ -74,8 +74,10 @@ def _verilate(
         # Extra optoins from command line
         cmd.extend(extraArgs)
         # Add extra defines if --trace is used. We check this here in case it came from extraArgs.
-        lastTraceOption = ([None] + [_ for _ in cmd if _ in ("--trace", "--trace-fst")]).pop()
-        if lastTraceOption == "--trace":
+        lastTraceOption = (
+            [None] + [_ for _ in cmd if _ in ("--trace", "--trace-vcd", "--trace-fst")]
+        ).pop()
+        if lastTraceOption in ("--trace", "--trace-vcd"):
             cmd.append("+define+__RTLMETER_TRACE_VCD")
         elif lastTraceOption == "--trace-fst":
             cmd.append("+define+__RTLMETER_TRACE_FST")
