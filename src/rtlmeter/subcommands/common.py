@@ -79,6 +79,11 @@ class ArgPatternMatcher:
             if (expanded := self._tags.get(item[1:])) is not None:
                 return expanded
             raise argparse.ArgumentTypeError(f"'{item}', is not a valid tag")
+        if item.startswith("-"):
+            # Get not tagged cases
+            if (expanded := self._tags.get(item[1:])) is not None:
+                return [_ for _ in self._choices if _ not in expanded]
+            raise argparse.ArgumentTypeError(f"'{item}', is not a valid tag")
         if item.startswith("@"):
             # Read one pattern per line
             if not os.path.exists(item[1:]):

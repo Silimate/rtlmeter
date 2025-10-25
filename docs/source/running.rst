@@ -162,6 +162,8 @@ can try:
 
     ./rtlmeter run --cases "+standard"
 
+To select cases not marked with a tag, you can use ``-<TAG>``.
+
 You can also specify a list of patterns in a file, one per line, and pass
 ``@filename`` to ``--cases``.
 
