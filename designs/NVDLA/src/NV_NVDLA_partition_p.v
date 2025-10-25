@@ -124,6 +124,9 @@ module NV_NVDLA_partition_p (
   ,sdp_rdma2csb_resp_pd //|> o
   ,sdp_rdma2csb_resp_valid //|> o
   );
+
+/* verilator hier_block */
+
 //
 // NV_NVDLA_partition_p_io.v
 //

@@ -148,7 +148,11 @@ module tile(
 ,   input   [1:0]                       irq_i          // level sensitive IR lines, mip & sip (async)
 `endif // ifdef PITON_RV64_PLIC
 `endif // ifdef PITON_RV64_PLATFORM
+,   output wire                         piton_pc_vld
+,   output wire [63:0]                  piton_pc
 );
+    /* verilator hier_block */
+
     // clock gating
     wire clk_gated;
     clk_gating_latch clk_gating_latch(
@@ -1018,4 +1022,6 @@ if (1) begin : g_ariane_core
         .rtap_core_data         (rtap_core_data)
         );
 
+    assign piton_pc_vld = g_ariane_core.core.ariane.i_cva6.piton_pc_vld;
+    assign piton_pc     = g_ariane_core.core.ariane.i_cva6.piton_pc;
 endmodule

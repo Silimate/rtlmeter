@@ -481,6 +481,8 @@ compile:
 execute:
   common:
     postHook: tests/post.bash
+    tags:
+      - hier
   tests:
     hello:
       files:

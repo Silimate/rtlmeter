@@ -305,6 +305,8 @@ execute:
     args:
       - +good_trap0=80000220
       - +bad_trap0=80000200
+    tags:
+      - hier
   tests:
     hello:
       files:

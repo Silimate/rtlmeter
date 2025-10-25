@@ -54,6 +54,9 @@ module NV_NVDLA_partition_a (
   ,cacc2sdp_valid //|> o
   ,csb2cacc_req_dst_prdy //|> o
   );
+
+/* verilator hier_block */
+
 //
 // NV_NVDLA_partition_a_io.v
 //

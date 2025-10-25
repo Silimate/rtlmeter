@@ -116,40 +116,35 @@ def _cppbuild(cgraph: CGraph, descr: CompileDescriptor, compileDir: str) -> CNod
             # On successfull run, gather some metrics
             with open(f"_{step}/time.json", "r", encoding="utf-8") as fd:
                 cData = json.load(fd)
-            # Gather ccache hit rate
-            ccacheHits = 0
-            objectFiles = 0
+            # Gather ccache hit rate and code size
+            codesectionRe = re.compile(r"^\s*\d+\s+\S+\s+(\S+)\s+.*\bCODE\b.*")
+            ccacheHits: int = 0
+            objectFiles: int = 0
+            codeSize: int = 0
             for dirPath, _, fileNames in os.walk("obj_dir"):
                 for fileName in fileNames:
-                    if fileName.endswith(".o"):
-                        objectFiles += 1
                     if fileName.endswith("ccache-log") and ".o." in fileName:
                         with open(os.path.join(dirPath, fileName), "r", encoding="utf-8") as fd:
                             if "Succeeded getting cached result" in fd.read():
                                 ccacheHits += 1
+                    elif fileName.endswith("Slow.o"):
+                        objectFiles += 1
+                        continue
+                    elif fileName.endswith(".o"):
+                        objectFiles += 1
+                        with subprocess.Popen(
+                            args=["objdump", "-w", "-h", os.path.join(dirPath, fileName)],
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT,
+                            text=True,
+                            encoding="utf-8",
+                        ) as process:
+                            assert process.stdout, "stdout is None"
+                            for line in process.stdout:
+                                if codesectionMatch := codesectionRe.match(line):
+                                    codeSize += int(codesectionMatch.group(1), base=16)
             cData["ccacheHit"] = 100.0 * ccacheHits / max(objectFiles, 1)
-            # Gather code size
-            with subprocess.Popen(
-                args=["objdump", "-w", "-h", os.path.join(compileDir, "obj_dir", "Vsim__ALL.a")],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                encoding="utf-8",
-            ) as process:
-                assert process.stdout, "stdout is None"
-                filenameRe = re.compile(r"^Vsim.*?(Slow)?.o:")
-                codesectionRe = re.compile(r"^\s*\d+\s+(\S+)\s+(\S+)\s+.*\bCODE\b.*")
-                slowFile: bool = False
-                hotCodeSize: int = 0
-                for line in process.stdout:
-                    if filenameMatch := filenameRe.match(line):
-                        slowFile = filenameMatch.group(1) is not None
-                        continue
-                    if slowFile:
-                        continue
-                    if codesectionMatch := codesectionRe.match(line):
-                        hotCodeSize += int(codesectionMatch.group(2), base=16)
-                cData["codeSize"] = hotCodeSize * 1e-6
+            cData["codeSize"] = codeSize * 1e-6
             # Result data
             data = {descr.case: {step: cData}}
             # Add combined 'verilate' + 'cppbuild'

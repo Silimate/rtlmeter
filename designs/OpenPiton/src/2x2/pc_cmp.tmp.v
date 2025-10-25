@@ -145,8 +145,8 @@ endtask // get_thread_status
                   active_thread[(0*4)+1] <= 1'b1;
                   active_thread[(0*4)+2] <= 1'b1;
                   active_thread[(0*4)+3] <= 1'b1;
-                  spc0_inst_done         <= `ARIANE_CORE0.piton_pc_vld;
-                  spc0_phy_pc_w          <= `ARIANE_CORE0.piton_pc;
+                  spc0_inst_done         <= `TILE0.piton_pc_vld;
+                  spc0_phy_pc_w          <= `TILE0.piton_pc;
                 end
             end
     
@@ -167,8 +167,8 @@ endtask // get_thread_status
                   active_thread[(1*4)+1] <= 1'b1;
                   active_thread[(1*4)+2] <= 1'b1;
                   active_thread[(1*4)+3] <= 1'b1;
-                  spc1_inst_done         <= `ARIANE_CORE1.piton_pc_vld;
-                  spc1_phy_pc_w          <= `ARIANE_CORE1.piton_pc;
+                  spc1_inst_done         <= `TILE1.piton_pc_vld;
+                  spc1_phy_pc_w          <= `TILE1.piton_pc;
                 end
             end
     
@@ -189,8 +189,8 @@ endtask // get_thread_status
                   active_thread[(2*4)+1] <= 1'b1;
                   active_thread[(2*4)+2] <= 1'b1;
                   active_thread[(2*4)+3] <= 1'b1;
-                  spc2_inst_done         <= `ARIANE_CORE2.piton_pc_vld;
-                  spc2_phy_pc_w          <= `ARIANE_CORE2.piton_pc;
+                  spc2_inst_done         <= `TILE2.piton_pc_vld;
+                  spc2_phy_pc_w          <= `TILE2.piton_pc;
                 end
             end
     
@@ -211,8 +211,8 @@ endtask // get_thread_status
                   active_thread[(3*4)+1] <= 1'b1;
                   active_thread[(3*4)+2] <= 1'b1;
                   active_thread[(3*4)+3] <= 1'b1;
-                  spc3_inst_done         <= `ARIANE_CORE3.piton_pc_vld;
-                  spc3_phy_pc_w          <= `ARIANE_CORE3.piton_pc;
+                  spc3_inst_done         <= `TILE3.piton_pc_vld;
+                  spc3_phy_pc_w          <= `TILE3.piton_pc;
                 end
             end
     

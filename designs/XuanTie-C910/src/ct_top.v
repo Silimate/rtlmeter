@@ -126,8 +126,14 @@ module ct_top(
   x_exit_dbg_req_i,
   x_exit_dbg_req_o,
   x_had_dbg_mask,
-  x_regs_serial_data
+  x_regs_serial_data,
+
+  rbus_pipe0_wb_data,
+  rbus_pipe1_wb_data,
+  ld_wb_preg_data_sign_extend
 );
+
+/* verilator hier_block */
 
 // &Ports("compare", "../../../gen_rtl/cpu/rtl/top_golden_port.v"); @28
 input   [63 :0]  ir_corex_wdata;                      
@@ -239,6 +245,10 @@ output           x_dbg_ack_pc;
 output           x_enter_dbg_req_o;                   
 output           x_exit_dbg_req_o;                    
 output  [63 :0]  x_regs_serial_data;                  
+
+output  [63 :0]  rbus_pipe0_wb_data;
+output  [63 :0]  rbus_pipe1_wb_data;
+output  [63 :0]  ld_wb_preg_data_sign_extend;
 
 //&Ports;
 // &Regs; @30
@@ -839,6 +849,9 @@ wire             x_exit_dbg_req_o;
 wire             x_had_dbg_mask;                      
 wire    [63 :0]  x_regs_serial_data;                  
 
+wire    [63 :0]  rbus_pipe0_wb_data;
+wire    [63 :0]  rbus_pipe1_wb_data;
+wire    [63 :0]  ld_wb_preg_data_sign_extend;
 
 // &Force("input", "pad_core_sleep_in"); @34
 // &Force("output","core_pad_sleep_out"); @35
@@ -1306,6 +1319,10 @@ ct_core  x_ct_core (
   .rtu_yy_xx_retire1                    (rtu_yy_xx_retire1                   ),
   .rtu_yy_xx_retire2                    (rtu_yy_xx_retire2                   )
 );
+
+assign rbus_pipe0_wb_data = x_ct_core.x_ct_iu_top.x_ct_iu_rbus.rbus_pipe0_wb_data[63:0];
+assign rbus_pipe1_wb_data = x_ct_core.x_ct_iu_top.x_ct_iu_rbus.rbus_pipe1_wb_data[63:0];
+assign ld_wb_preg_data_sign_extend = x_ct_core.x_ct_lsu_top.x_ct_lsu_ld_wb.ld_wb_preg_data_sign_extend[63:0];
 
 // &Connect(.forever_cpuclk    (coreclk)); @41
 // &Connect(.ifu_rst_b         (ifu_rst_b)); @42

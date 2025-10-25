@@ -433,6 +433,8 @@ execute:
     postHook: tests/post.bash
     files:
       - tests/slave_mem.cfg
+    tags:
+      - hier
   tests:
     hello: # Same as 'relu' but only 1 iteration
       files:

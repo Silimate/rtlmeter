@@ -728,6 +728,9 @@ module NV_NVDLA_partition_o (
   ,nvdla_falcon_clk //|< i
   ,nvdla_clk_ovr_on //|> o
   );
+
+/* verilator hier_block */
+
 //
 // NV_NVDLA_partition_o_io.v
 //

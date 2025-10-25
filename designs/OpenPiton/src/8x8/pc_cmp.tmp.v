@@ -865,8 +865,8 @@ endtask // get_thread_status
                   active_thread[(0*4)+1] <= 1'b1;
                   active_thread[(0*4)+2] <= 1'b1;
                   active_thread[(0*4)+3] <= 1'b1;
-                  spc0_inst_done         <= `ARIANE_CORE0.piton_pc_vld;
-                  spc0_phy_pc_w          <= `ARIANE_CORE0.piton_pc;
+                  spc0_inst_done         <= `TILE0.piton_pc_vld;
+                  spc0_phy_pc_w          <= `TILE0.piton_pc;
                 end
             end
     
@@ -887,8 +887,8 @@ endtask // get_thread_status
                   active_thread[(1*4)+1] <= 1'b1;
                   active_thread[(1*4)+2] <= 1'b1;
                   active_thread[(1*4)+3] <= 1'b1;
-                  spc1_inst_done         <= `ARIANE_CORE1.piton_pc_vld;
-                  spc1_phy_pc_w          <= `ARIANE_CORE1.piton_pc;
+                  spc1_inst_done         <= `TILE1.piton_pc_vld;
+                  spc1_phy_pc_w          <= `TILE1.piton_pc;
                 end
             end
     
@@ -909,8 +909,8 @@ endtask // get_thread_status
                   active_thread[(2*4)+1] <= 1'b1;
                   active_thread[(2*4)+2] <= 1'b1;
                   active_thread[(2*4)+3] <= 1'b1;
-                  spc2_inst_done         <= `ARIANE_CORE2.piton_pc_vld;
-                  spc2_phy_pc_w          <= `ARIANE_CORE2.piton_pc;
+                  spc2_inst_done         <= `TILE2.piton_pc_vld;
+                  spc2_phy_pc_w          <= `TILE2.piton_pc;
                 end
             end
     
@@ -931,8 +931,8 @@ endtask // get_thread_status
                   active_thread[(3*4)+1] <= 1'b1;
                   active_thread[(3*4)+2] <= 1'b1;
                   active_thread[(3*4)+3] <= 1'b1;
-                  spc3_inst_done         <= `ARIANE_CORE3.piton_pc_vld;
-                  spc3_phy_pc_w          <= `ARIANE_CORE3.piton_pc;
+                  spc3_inst_done         <= `TILE3.piton_pc_vld;
+                  spc3_phy_pc_w          <= `TILE3.piton_pc;
                 end
             end
     
@@ -953,8 +953,8 @@ endtask // get_thread_status
                   active_thread[(4*4)+1] <= 1'b1;
                   active_thread[(4*4)+2] <= 1'b1;
                   active_thread[(4*4)+3] <= 1'b1;
-                  spc4_inst_done         <= `ARIANE_CORE4.piton_pc_vld;
-                  spc4_phy_pc_w          <= `ARIANE_CORE4.piton_pc;
+                  spc4_inst_done         <= `TILE4.piton_pc_vld;
+                  spc4_phy_pc_w          <= `TILE4.piton_pc;
                 end
             end
     
@@ -975,8 +975,8 @@ endtask // get_thread_status
                   active_thread[(5*4)+1] <= 1'b1;
                   active_thread[(5*4)+2] <= 1'b1;
                   active_thread[(5*4)+3] <= 1'b1;
-                  spc5_inst_done         <= `ARIANE_CORE5.piton_pc_vld;
-                  spc5_phy_pc_w          <= `ARIANE_CORE5.piton_pc;
+                  spc5_inst_done         <= `TILE5.piton_pc_vld;
+                  spc5_phy_pc_w          <= `TILE5.piton_pc;
                 end
             end
     
@@ -997,8 +997,8 @@ endtask // get_thread_status
                   active_thread[(6*4)+1] <= 1'b1;
                   active_thread[(6*4)+2] <= 1'b1;
                   active_thread[(6*4)+3] <= 1'b1;
-                  spc6_inst_done         <= `ARIANE_CORE6.piton_pc_vld;
-                  spc6_phy_pc_w          <= `ARIANE_CORE6.piton_pc;
+                  spc6_inst_done         <= `TILE6.piton_pc_vld;
+                  spc6_phy_pc_w          <= `TILE6.piton_pc;
                 end
             end
     
@@ -1019,8 +1019,8 @@ endtask // get_thread_status
                   active_thread[(7*4)+1] <= 1'b1;
                   active_thread[(7*4)+2] <= 1'b1;
                   active_thread[(7*4)+3] <= 1'b1;
-                  spc7_inst_done         <= `ARIANE_CORE7.piton_pc_vld;
-                  spc7_phy_pc_w          <= `ARIANE_CORE7.piton_pc;
+                  spc7_inst_done         <= `TILE7.piton_pc_vld;
+                  spc7_phy_pc_w          <= `TILE7.piton_pc;
                 end
             end
     
@@ -1041,8 +1041,8 @@ endtask // get_thread_status
                   active_thread[(8*4)+1] <= 1'b1;
                   active_thread[(8*4)+2] <= 1'b1;
                   active_thread[(8*4)+3] <= 1'b1;
-                  spc8_inst_done         <= `ARIANE_CORE8.piton_pc_vld;
-                  spc8_phy_pc_w          <= `ARIANE_CORE8.piton_pc;
+                  spc8_inst_done         <= `TILE8.piton_pc_vld;
+                  spc8_phy_pc_w          <= `TILE8.piton_pc;
                 end
             end
     
@@ -1063,8 +1063,8 @@ endtask // get_thread_status
                   active_thread[(9*4)+1] <= 1'b1;
                   active_thread[(9*4)+2] <= 1'b1;
                   active_thread[(9*4)+3] <= 1'b1;
-                  spc9_inst_done         <= `ARIANE_CORE9.piton_pc_vld;
-                  spc9_phy_pc_w          <= `ARIANE_CORE9.piton_pc;
+                  spc9_inst_done         <= `TILE9.piton_pc_vld;
+                  spc9_phy_pc_w          <= `TILE9.piton_pc;
                 end
             end
     
@@ -1085,8 +1085,8 @@ endtask // get_thread_status
                   active_thread[(10*4)+1] <= 1'b1;
                   active_thread[(10*4)+2] <= 1'b1;
                   active_thread[(10*4)+3] <= 1'b1;
-                  spc10_inst_done         <= `ARIANE_CORE10.piton_pc_vld;
-                  spc10_phy_pc_w          <= `ARIANE_CORE10.piton_pc;
+                  spc10_inst_done         <= `TILE10.piton_pc_vld;
+                  spc10_phy_pc_w          <= `TILE10.piton_pc;
                 end
             end
     
@@ -1107,8 +1107,8 @@ endtask // get_thread_status
                   active_thread[(11*4)+1] <= 1'b1;
                   active_thread[(11*4)+2] <= 1'b1;
                   active_thread[(11*4)+3] <= 1'b1;
-                  spc11_inst_done         <= `ARIANE_CORE11.piton_pc_vld;
-                  spc11_phy_pc_w          <= `ARIANE_CORE11.piton_pc;
+                  spc11_inst_done         <= `TILE11.piton_pc_vld;
+                  spc11_phy_pc_w          <= `TILE11.piton_pc;
                 end
             end
     
@@ -1129,8 +1129,8 @@ endtask // get_thread_status
                   active_thread[(12*4)+1] <= 1'b1;
                   active_thread[(12*4)+2] <= 1'b1;
                   active_thread[(12*4)+3] <= 1'b1;
-                  spc12_inst_done         <= `ARIANE_CORE12.piton_pc_vld;
-                  spc12_phy_pc_w          <= `ARIANE_CORE12.piton_pc;
+                  spc12_inst_done         <= `TILE12.piton_pc_vld;
+                  spc12_phy_pc_w          <= `TILE12.piton_pc;
                 end
             end
     
@@ -1151,8 +1151,8 @@ endtask // get_thread_status
                   active_thread[(13*4)+1] <= 1'b1;
                   active_thread[(13*4)+2] <= 1'b1;
                   active_thread[(13*4)+3] <= 1'b1;
-                  spc13_inst_done         <= `ARIANE_CORE13.piton_pc_vld;
-                  spc13_phy_pc_w          <= `ARIANE_CORE13.piton_pc;
+                  spc13_inst_done         <= `TILE13.piton_pc_vld;
+                  spc13_phy_pc_w          <= `TILE13.piton_pc;
                 end
             end
     
@@ -1173,8 +1173,8 @@ endtask // get_thread_status
                   active_thread[(14*4)+1] <= 1'b1;
                   active_thread[(14*4)+2] <= 1'b1;
                   active_thread[(14*4)+3] <= 1'b1;
-                  spc14_inst_done         <= `ARIANE_CORE14.piton_pc_vld;
-                  spc14_phy_pc_w          <= `ARIANE_CORE14.piton_pc;
+                  spc14_inst_done         <= `TILE14.piton_pc_vld;
+                  spc14_phy_pc_w          <= `TILE14.piton_pc;
                 end
             end
     
@@ -1195,8 +1195,8 @@ endtask // get_thread_status
                   active_thread[(15*4)+1] <= 1'b1;
                   active_thread[(15*4)+2] <= 1'b1;
                   active_thread[(15*4)+3] <= 1'b1;
-                  spc15_inst_done         <= `ARIANE_CORE15.piton_pc_vld;
-                  spc15_phy_pc_w          <= `ARIANE_CORE15.piton_pc;
+                  spc15_inst_done         <= `TILE15.piton_pc_vld;
+                  spc15_phy_pc_w          <= `TILE15.piton_pc;
                 end
             end
     
@@ -1217,8 +1217,8 @@ endtask // get_thread_status
                   active_thread[(16*4)+1] <= 1'b1;
                   active_thread[(16*4)+2] <= 1'b1;
                   active_thread[(16*4)+3] <= 1'b1;
-                  spc16_inst_done         <= `ARIANE_CORE16.piton_pc_vld;
-                  spc16_phy_pc_w          <= `ARIANE_CORE16.piton_pc;
+                  spc16_inst_done         <= `TILE16.piton_pc_vld;
+                  spc16_phy_pc_w          <= `TILE16.piton_pc;
                 end
             end
     
@@ -1239,8 +1239,8 @@ endtask // get_thread_status
                   active_thread[(17*4)+1] <= 1'b1;
                   active_thread[(17*4)+2] <= 1'b1;
                   active_thread[(17*4)+3] <= 1'b1;
-                  spc17_inst_done         <= `ARIANE_CORE17.piton_pc_vld;
-                  spc17_phy_pc_w          <= `ARIANE_CORE17.piton_pc;
+                  spc17_inst_done         <= `TILE17.piton_pc_vld;
+                  spc17_phy_pc_w          <= `TILE17.piton_pc;
                 end
             end
     
@@ -1261,8 +1261,8 @@ endtask // get_thread_status
                   active_thread[(18*4)+1] <= 1'b1;
                   active_thread[(18*4)+2] <= 1'b1;
                   active_thread[(18*4)+3] <= 1'b1;
-                  spc18_inst_done         <= `ARIANE_CORE18.piton_pc_vld;
-                  spc18_phy_pc_w          <= `ARIANE_CORE18.piton_pc;
+                  spc18_inst_done         <= `TILE18.piton_pc_vld;
+                  spc18_phy_pc_w          <= `TILE18.piton_pc;
                 end
             end
     
@@ -1283,8 +1283,8 @@ endtask // get_thread_status
                   active_thread[(19*4)+1] <= 1'b1;
                   active_thread[(19*4)+2] <= 1'b1;
                   active_thread[(19*4)+3] <= 1'b1;
-                  spc19_inst_done         <= `ARIANE_CORE19.piton_pc_vld;
-                  spc19_phy_pc_w          <= `ARIANE_CORE19.piton_pc;
+                  spc19_inst_done         <= `TILE19.piton_pc_vld;
+                  spc19_phy_pc_w          <= `TILE19.piton_pc;
                 end
             end
     
@@ -1305,8 +1305,8 @@ endtask // get_thread_status
                   active_thread[(20*4)+1] <= 1'b1;
                   active_thread[(20*4)+2] <= 1'b1;
                   active_thread[(20*4)+3] <= 1'b1;
-                  spc20_inst_done         <= `ARIANE_CORE20.piton_pc_vld;
-                  spc20_phy_pc_w          <= `ARIANE_CORE20.piton_pc;
+                  spc20_inst_done         <= `TILE20.piton_pc_vld;
+                  spc20_phy_pc_w          <= `TILE20.piton_pc;
                 end
             end
     
@@ -1327,8 +1327,8 @@ endtask // get_thread_status
                   active_thread[(21*4)+1] <= 1'b1;
                   active_thread[(21*4)+2] <= 1'b1;
                   active_thread[(21*4)+3] <= 1'b1;
-                  spc21_inst_done         <= `ARIANE_CORE21.piton_pc_vld;
-                  spc21_phy_pc_w          <= `ARIANE_CORE21.piton_pc;
+                  spc21_inst_done         <= `TILE21.piton_pc_vld;
+                  spc21_phy_pc_w          <= `TILE21.piton_pc;
                 end
             end
     
@@ -1349,8 +1349,8 @@ endtask // get_thread_status
                   active_thread[(22*4)+1] <= 1'b1;
                   active_thread[(22*4)+2] <= 1'b1;
                   active_thread[(22*4)+3] <= 1'b1;
-                  spc22_inst_done         <= `ARIANE_CORE22.piton_pc_vld;
-                  spc22_phy_pc_w          <= `ARIANE_CORE22.piton_pc;
+                  spc22_inst_done         <= `TILE22.piton_pc_vld;
+                  spc22_phy_pc_w          <= `TILE22.piton_pc;
                 end
             end
     
@@ -1371,8 +1371,8 @@ endtask // get_thread_status
                   active_thread[(23*4)+1] <= 1'b1;
                   active_thread[(23*4)+2] <= 1'b1;
                   active_thread[(23*4)+3] <= 1'b1;
-                  spc23_inst_done         <= `ARIANE_CORE23.piton_pc_vld;
-                  spc23_phy_pc_w          <= `ARIANE_CORE23.piton_pc;
+                  spc23_inst_done         <= `TILE23.piton_pc_vld;
+                  spc23_phy_pc_w          <= `TILE23.piton_pc;
                 end
             end
     
@@ -1393,8 +1393,8 @@ endtask // get_thread_status
                   active_thread[(24*4)+1] <= 1'b1;
                   active_thread[(24*4)+2] <= 1'b1;
                   active_thread[(24*4)+3] <= 1'b1;
-                  spc24_inst_done         <= `ARIANE_CORE24.piton_pc_vld;
-                  spc24_phy_pc_w          <= `ARIANE_CORE24.piton_pc;
+                  spc24_inst_done         <= `TILE24.piton_pc_vld;
+                  spc24_phy_pc_w          <= `TILE24.piton_pc;
                 end
             end
     
@@ -1415,8 +1415,8 @@ endtask // get_thread_status
                   active_thread[(25*4)+1] <= 1'b1;
                   active_thread[(25*4)+2] <= 1'b1;
                   active_thread[(25*4)+3] <= 1'b1;
-                  spc25_inst_done         <= `ARIANE_CORE25.piton_pc_vld;
-                  spc25_phy_pc_w          <= `ARIANE_CORE25.piton_pc;
+                  spc25_inst_done         <= `TILE25.piton_pc_vld;
+                  spc25_phy_pc_w          <= `TILE25.piton_pc;
                 end
             end
     
@@ -1437,8 +1437,8 @@ endtask // get_thread_status
                   active_thread[(26*4)+1] <= 1'b1;
                   active_thread[(26*4)+2] <= 1'b1;
                   active_thread[(26*4)+3] <= 1'b1;
-                  spc26_inst_done         <= `ARIANE_CORE26.piton_pc_vld;
-                  spc26_phy_pc_w          <= `ARIANE_CORE26.piton_pc;
+                  spc26_inst_done         <= `TILE26.piton_pc_vld;
+                  spc26_phy_pc_w          <= `TILE26.piton_pc;
                 end
             end
     
@@ -1459,8 +1459,8 @@ endtask // get_thread_status
                   active_thread[(27*4)+1] <= 1'b1;
                   active_thread[(27*4)+2] <= 1'b1;
                   active_thread[(27*4)+3] <= 1'b1;
-                  spc27_inst_done         <= `ARIANE_CORE27.piton_pc_vld;
-                  spc27_phy_pc_w          <= `ARIANE_CORE27.piton_pc;
+                  spc27_inst_done         <= `TILE27.piton_pc_vld;
+                  spc27_phy_pc_w          <= `TILE27.piton_pc;
                 end
             end
     
@@ -1481,8 +1481,8 @@ endtask // get_thread_status
                   active_thread[(28*4)+1] <= 1'b1;
                   active_thread[(28*4)+2] <= 1'b1;
                   active_thread[(28*4)+3] <= 1'b1;
-                  spc28_inst_done         <= `ARIANE_CORE28.piton_pc_vld;
-                  spc28_phy_pc_w          <= `ARIANE_CORE28.piton_pc;
+                  spc28_inst_done         <= `TILE28.piton_pc_vld;
+                  spc28_phy_pc_w          <= `TILE28.piton_pc;
                 end
             end
     
@@ -1503,8 +1503,8 @@ endtask // get_thread_status
                   active_thread[(29*4)+1] <= 1'b1;
                   active_thread[(29*4)+2] <= 1'b1;
                   active_thread[(29*4)+3] <= 1'b1;
-                  spc29_inst_done         <= `ARIANE_CORE29.piton_pc_vld;
-                  spc29_phy_pc_w          <= `ARIANE_CORE29.piton_pc;
+                  spc29_inst_done         <= `TILE29.piton_pc_vld;
+                  spc29_phy_pc_w          <= `TILE29.piton_pc;
                 end
             end
     
@@ -1525,8 +1525,8 @@ endtask // get_thread_status
                   active_thread[(30*4)+1] <= 1'b1;
                   active_thread[(30*4)+2] <= 1'b1;
                   active_thread[(30*4)+3] <= 1'b1;
-                  spc30_inst_done         <= `ARIANE_CORE30.piton_pc_vld;
-                  spc30_phy_pc_w          <= `ARIANE_CORE30.piton_pc;
+                  spc30_inst_done         <= `TILE30.piton_pc_vld;
+                  spc30_phy_pc_w          <= `TILE30.piton_pc;
                 end
             end
     
@@ -1547,8 +1547,8 @@ endtask // get_thread_status
                   active_thread[(31*4)+1] <= 1'b1;
                   active_thread[(31*4)+2] <= 1'b1;
                   active_thread[(31*4)+3] <= 1'b1;
-                  spc31_inst_done         <= `ARIANE_CORE31.piton_pc_vld;
-                  spc31_phy_pc_w          <= `ARIANE_CORE31.piton_pc;
+                  spc31_inst_done         <= `TILE31.piton_pc_vld;
+                  spc31_phy_pc_w          <= `TILE31.piton_pc;
                 end
             end
     
@@ -1569,8 +1569,8 @@ endtask // get_thread_status
                   active_thread[(32*4)+1] <= 1'b1;
                   active_thread[(32*4)+2] <= 1'b1;
                   active_thread[(32*4)+3] <= 1'b1;
-                  spc32_inst_done         <= `ARIANE_CORE32.piton_pc_vld;
-                  spc32_phy_pc_w          <= `ARIANE_CORE32.piton_pc;
+                  spc32_inst_done         <= `TILE32.piton_pc_vld;
+                  spc32_phy_pc_w          <= `TILE32.piton_pc;
                 end
             end
     
@@ -1591,8 +1591,8 @@ endtask // get_thread_status
                   active_thread[(33*4)+1] <= 1'b1;
                   active_thread[(33*4)+2] <= 1'b1;
                   active_thread[(33*4)+3] <= 1'b1;
-                  spc33_inst_done         <= `ARIANE_CORE33.piton_pc_vld;
-                  spc33_phy_pc_w          <= `ARIANE_CORE33.piton_pc;
+                  spc33_inst_done         <= `TILE33.piton_pc_vld;
+                  spc33_phy_pc_w          <= `TILE33.piton_pc;
                 end
             end
     
@@ -1613,8 +1613,8 @@ endtask // get_thread_status
                   active_thread[(34*4)+1] <= 1'b1;
                   active_thread[(34*4)+2] <= 1'b1;
                   active_thread[(34*4)+3] <= 1'b1;
-                  spc34_inst_done         <= `ARIANE_CORE34.piton_pc_vld;
-                  spc34_phy_pc_w          <= `ARIANE_CORE34.piton_pc;
+                  spc34_inst_done         <= `TILE34.piton_pc_vld;
+                  spc34_phy_pc_w          <= `TILE34.piton_pc;
                 end
             end
     
@@ -1635,8 +1635,8 @@ endtask // get_thread_status
                   active_thread[(35*4)+1] <= 1'b1;
                   active_thread[(35*4)+2] <= 1'b1;
                   active_thread[(35*4)+3] <= 1'b1;
-                  spc35_inst_done         <= `ARIANE_CORE35.piton_pc_vld;
-                  spc35_phy_pc_w          <= `ARIANE_CORE35.piton_pc;
+                  spc35_inst_done         <= `TILE35.piton_pc_vld;
+                  spc35_phy_pc_w          <= `TILE35.piton_pc;
                 end
             end
     
@@ -1657,8 +1657,8 @@ endtask // get_thread_status
                   active_thread[(36*4)+1] <= 1'b1;
                   active_thread[(36*4)+2] <= 1'b1;
                   active_thread[(36*4)+3] <= 1'b1;
-                  spc36_inst_done         <= `ARIANE_CORE36.piton_pc_vld;
-                  spc36_phy_pc_w          <= `ARIANE_CORE36.piton_pc;
+                  spc36_inst_done         <= `TILE36.piton_pc_vld;
+                  spc36_phy_pc_w          <= `TILE36.piton_pc;
                 end
             end
     
@@ -1679,8 +1679,8 @@ endtask // get_thread_status
                   active_thread[(37*4)+1] <= 1'b1;
                   active_thread[(37*4)+2] <= 1'b1;
                   active_thread[(37*4)+3] <= 1'b1;
-                  spc37_inst_done         <= `ARIANE_CORE37.piton_pc_vld;
-                  spc37_phy_pc_w          <= `ARIANE_CORE37.piton_pc;
+                  spc37_inst_done         <= `TILE37.piton_pc_vld;
+                  spc37_phy_pc_w          <= `TILE37.piton_pc;
                 end
             end
     
@@ -1701,8 +1701,8 @@ endtask // get_thread_status
                   active_thread[(38*4)+1] <= 1'b1;
                   active_thread[(38*4)+2] <= 1'b1;
                   active_thread[(38*4)+3] <= 1'b1;
-                  spc38_inst_done         <= `ARIANE_CORE38.piton_pc_vld;
-                  spc38_phy_pc_w          <= `ARIANE_CORE38.piton_pc;
+                  spc38_inst_done         <= `TILE38.piton_pc_vld;
+                  spc38_phy_pc_w          <= `TILE38.piton_pc;
                 end
             end
     
@@ -1723,8 +1723,8 @@ endtask // get_thread_status
                   active_thread[(39*4)+1] <= 1'b1;
                   active_thread[(39*4)+2] <= 1'b1;
                   active_thread[(39*4)+3] <= 1'b1;
-                  spc39_inst_done         <= `ARIANE_CORE39.piton_pc_vld;
-                  spc39_phy_pc_w          <= `ARIANE_CORE39.piton_pc;
+                  spc39_inst_done         <= `TILE39.piton_pc_vld;
+                  spc39_phy_pc_w          <= `TILE39.piton_pc;
                 end
             end
     
@@ -1745,8 +1745,8 @@ endtask // get_thread_status
                   active_thread[(40*4)+1] <= 1'b1;
                   active_thread[(40*4)+2] <= 1'b1;
                   active_thread[(40*4)+3] <= 1'b1;
-                  spc40_inst_done         <= `ARIANE_CORE40.piton_pc_vld;
-                  spc40_phy_pc_w          <= `ARIANE_CORE40.piton_pc;
+                  spc40_inst_done         <= `TILE40.piton_pc_vld;
+                  spc40_phy_pc_w          <= `TILE40.piton_pc;
                 end
             end
     
@@ -1767,8 +1767,8 @@ endtask // get_thread_status
                   active_thread[(41*4)+1] <= 1'b1;
                   active_thread[(41*4)+2] <= 1'b1;
                   active_thread[(41*4)+3] <= 1'b1;
-                  spc41_inst_done         <= `ARIANE_CORE41.piton_pc_vld;
-                  spc41_phy_pc_w          <= `ARIANE_CORE41.piton_pc;
+                  spc41_inst_done         <= `TILE41.piton_pc_vld;
+                  spc41_phy_pc_w          <= `TILE41.piton_pc;
                 end
             end
     
@@ -1789,8 +1789,8 @@ endtask // get_thread_status
                   active_thread[(42*4)+1] <= 1'b1;
                   active_thread[(42*4)+2] <= 1'b1;
                   active_thread[(42*4)+3] <= 1'b1;
-                  spc42_inst_done         <= `ARIANE_CORE42.piton_pc_vld;
-                  spc42_phy_pc_w          <= `ARIANE_CORE42.piton_pc;
+                  spc42_inst_done         <= `TILE42.piton_pc_vld;
+                  spc42_phy_pc_w          <= `TILE42.piton_pc;
                 end
             end
     
@@ -1811,8 +1811,8 @@ endtask // get_thread_status
                   active_thread[(43*4)+1] <= 1'b1;
                   active_thread[(43*4)+2] <= 1'b1;
                   active_thread[(43*4)+3] <= 1'b1;
-                  spc43_inst_done         <= `ARIANE_CORE43.piton_pc_vld;
-                  spc43_phy_pc_w          <= `ARIANE_CORE43.piton_pc;
+                  spc43_inst_done         <= `TILE43.piton_pc_vld;
+                  spc43_phy_pc_w          <= `TILE43.piton_pc;
                 end
             end
     
@@ -1833,8 +1833,8 @@ endtask // get_thread_status
                   active_thread[(44*4)+1] <= 1'b1;
                   active_thread[(44*4)+2] <= 1'b1;
                   active_thread[(44*4)+3] <= 1'b1;
-                  spc44_inst_done         <= `ARIANE_CORE44.piton_pc_vld;
-                  spc44_phy_pc_w          <= `ARIANE_CORE44.piton_pc;
+                  spc44_inst_done         <= `TILE44.piton_pc_vld;
+                  spc44_phy_pc_w          <= `TILE44.piton_pc;
                 end
             end
     
@@ -1855,8 +1855,8 @@ endtask // get_thread_status
                   active_thread[(45*4)+1] <= 1'b1;
                   active_thread[(45*4)+2] <= 1'b1;
                   active_thread[(45*4)+3] <= 1'b1;
-                  spc45_inst_done         <= `ARIANE_CORE45.piton_pc_vld;
-                  spc45_phy_pc_w          <= `ARIANE_CORE45.piton_pc;
+                  spc45_inst_done         <= `TILE45.piton_pc_vld;
+                  spc45_phy_pc_w          <= `TILE45.piton_pc;
                 end
             end
     
@@ -1877,8 +1877,8 @@ endtask // get_thread_status
                   active_thread[(46*4)+1] <= 1'b1;
                   active_thread[(46*4)+2] <= 1'b1;
                   active_thread[(46*4)+3] <= 1'b1;
-                  spc46_inst_done         <= `ARIANE_CORE46.piton_pc_vld;
-                  spc46_phy_pc_w          <= `ARIANE_CORE46.piton_pc;
+                  spc46_inst_done         <= `TILE46.piton_pc_vld;
+                  spc46_phy_pc_w          <= `TILE46.piton_pc;
                 end
             end
     
@@ -1899,8 +1899,8 @@ endtask // get_thread_status
                   active_thread[(47*4)+1] <= 1'b1;
                   active_thread[(47*4)+2] <= 1'b1;
                   active_thread[(47*4)+3] <= 1'b1;
-                  spc47_inst_done         <= `ARIANE_CORE47.piton_pc_vld;
-                  spc47_phy_pc_w          <= `ARIANE_CORE47.piton_pc;
+                  spc47_inst_done         <= `TILE47.piton_pc_vld;
+                  spc47_phy_pc_w          <= `TILE47.piton_pc;
                 end
             end
     
@@ -1921,8 +1921,8 @@ endtask // get_thread_status
                   active_thread[(48*4)+1] <= 1'b1;
                   active_thread[(48*4)+2] <= 1'b1;
                   active_thread[(48*4)+3] <= 1'b1;
-                  spc48_inst_done         <= `ARIANE_CORE48.piton_pc_vld;
-                  spc48_phy_pc_w          <= `ARIANE_CORE48.piton_pc;
+                  spc48_inst_done         <= `TILE48.piton_pc_vld;
+                  spc48_phy_pc_w          <= `TILE48.piton_pc;
                 end
             end
     
@@ -1943,8 +1943,8 @@ endtask // get_thread_status
                   active_thread[(49*4)+1] <= 1'b1;
                   active_thread[(49*4)+2] <= 1'b1;
                   active_thread[(49*4)+3] <= 1'b1;
-                  spc49_inst_done         <= `ARIANE_CORE49.piton_pc_vld;
-                  spc49_phy_pc_w          <= `ARIANE_CORE49.piton_pc;
+                  spc49_inst_done         <= `TILE49.piton_pc_vld;
+                  spc49_phy_pc_w          <= `TILE49.piton_pc;
                 end
             end
     
@@ -1965,8 +1965,8 @@ endtask // get_thread_status
                   active_thread[(50*4)+1] <= 1'b1;
                   active_thread[(50*4)+2] <= 1'b1;
                   active_thread[(50*4)+3] <= 1'b1;
-                  spc50_inst_done         <= `ARIANE_CORE50.piton_pc_vld;
-                  spc50_phy_pc_w          <= `ARIANE_CORE50.piton_pc;
+                  spc50_inst_done         <= `TILE50.piton_pc_vld;
+                  spc50_phy_pc_w          <= `TILE50.piton_pc;
                 end
             end
     
@@ -1987,8 +1987,8 @@ endtask // get_thread_status
                   active_thread[(51*4)+1] <= 1'b1;
                   active_thread[(51*4)+2] <= 1'b1;
                   active_thread[(51*4)+3] <= 1'b1;
-                  spc51_inst_done         <= `ARIANE_CORE51.piton_pc_vld;
-                  spc51_phy_pc_w          <= `ARIANE_CORE51.piton_pc;
+                  spc51_inst_done         <= `TILE51.piton_pc_vld;
+                  spc51_phy_pc_w          <= `TILE51.piton_pc;
                 end
             end
     
@@ -2009,8 +2009,8 @@ endtask // get_thread_status
                   active_thread[(52*4)+1] <= 1'b1;
                   active_thread[(52*4)+2] <= 1'b1;
                   active_thread[(52*4)+3] <= 1'b1;
-                  spc52_inst_done         <= `ARIANE_CORE52.piton_pc_vld;
-                  spc52_phy_pc_w          <= `ARIANE_CORE52.piton_pc;
+                  spc52_inst_done         <= `TILE52.piton_pc_vld;
+                  spc52_phy_pc_w          <= `TILE52.piton_pc;
                 end
             end
     
@@ -2031,8 +2031,8 @@ endtask // get_thread_status
                   active_thread[(53*4)+1] <= 1'b1;
                   active_thread[(53*4)+2] <= 1'b1;
                   active_thread[(53*4)+3] <= 1'b1;
-                  spc53_inst_done         <= `ARIANE_CORE53.piton_pc_vld;
-                  spc53_phy_pc_w          <= `ARIANE_CORE53.piton_pc;
+                  spc53_inst_done         <= `TILE53.piton_pc_vld;
+                  spc53_phy_pc_w          <= `TILE53.piton_pc;
                 end
             end
     
@@ -2053,8 +2053,8 @@ endtask // get_thread_status
                   active_thread[(54*4)+1] <= 1'b1;
                   active_thread[(54*4)+2] <= 1'b1;
                   active_thread[(54*4)+3] <= 1'b1;
-                  spc54_inst_done         <= `ARIANE_CORE54.piton_pc_vld;
-                  spc54_phy_pc_w          <= `ARIANE_CORE54.piton_pc;
+                  spc54_inst_done         <= `TILE54.piton_pc_vld;
+                  spc54_phy_pc_w          <= `TILE54.piton_pc;
                 end
             end
     
@@ -2075,8 +2075,8 @@ endtask // get_thread_status
                   active_thread[(55*4)+1] <= 1'b1;
                   active_thread[(55*4)+2] <= 1'b1;
                   active_thread[(55*4)+3] <= 1'b1;
-                  spc55_inst_done         <= `ARIANE_CORE55.piton_pc_vld;
-                  spc55_phy_pc_w          <= `ARIANE_CORE55.piton_pc;
+                  spc55_inst_done         <= `TILE55.piton_pc_vld;
+                  spc55_phy_pc_w          <= `TILE55.piton_pc;
                 end
             end
     
@@ -2097,8 +2097,8 @@ endtask // get_thread_status
                   active_thread[(56*4)+1] <= 1'b1;
                   active_thread[(56*4)+2] <= 1'b1;
                   active_thread[(56*4)+3] <= 1'b1;
-                  spc56_inst_done         <= `ARIANE_CORE56.piton_pc_vld;
-                  spc56_phy_pc_w          <= `ARIANE_CORE56.piton_pc;
+                  spc56_inst_done         <= `TILE56.piton_pc_vld;
+                  spc56_phy_pc_w          <= `TILE56.piton_pc;
                 end
             end
     
@@ -2119,8 +2119,8 @@ endtask // get_thread_status
                   active_thread[(57*4)+1] <= 1'b1;
                   active_thread[(57*4)+2] <= 1'b1;
                   active_thread[(57*4)+3] <= 1'b1;
-                  spc57_inst_done         <= `ARIANE_CORE57.piton_pc_vld;
-                  spc57_phy_pc_w          <= `ARIANE_CORE57.piton_pc;
+                  spc57_inst_done         <= `TILE57.piton_pc_vld;
+                  spc57_phy_pc_w          <= `TILE57.piton_pc;
                 end
             end
     
@@ -2141,8 +2141,8 @@ endtask // get_thread_status
                   active_thread[(58*4)+1] <= 1'b1;
                   active_thread[(58*4)+2] <= 1'b1;
                   active_thread[(58*4)+3] <= 1'b1;
-                  spc58_inst_done         <= `ARIANE_CORE58.piton_pc_vld;
-                  spc58_phy_pc_w          <= `ARIANE_CORE58.piton_pc;
+                  spc58_inst_done         <= `TILE58.piton_pc_vld;
+                  spc58_phy_pc_w          <= `TILE58.piton_pc;
                 end
             end
     
@@ -2163,8 +2163,8 @@ endtask // get_thread_status
                   active_thread[(59*4)+1] <= 1'b1;
                   active_thread[(59*4)+2] <= 1'b1;
                   active_thread[(59*4)+3] <= 1'b1;
-                  spc59_inst_done         <= `ARIANE_CORE59.piton_pc_vld;
-                  spc59_phy_pc_w          <= `ARIANE_CORE59.piton_pc;
+                  spc59_inst_done         <= `TILE59.piton_pc_vld;
+                  spc59_phy_pc_w          <= `TILE59.piton_pc;
                 end
             end
     
@@ -2185,8 +2185,8 @@ endtask // get_thread_status
                   active_thread[(60*4)+1] <= 1'b1;
                   active_thread[(60*4)+2] <= 1'b1;
                   active_thread[(60*4)+3] <= 1'b1;
-                  spc60_inst_done         <= `ARIANE_CORE60.piton_pc_vld;
-                  spc60_phy_pc_w          <= `ARIANE_CORE60.piton_pc;
+                  spc60_inst_done         <= `TILE60.piton_pc_vld;
+                  spc60_phy_pc_w          <= `TILE60.piton_pc;
                 end
             end
     
@@ -2207,8 +2207,8 @@ endtask // get_thread_status
                   active_thread[(61*4)+1] <= 1'b1;
                   active_thread[(61*4)+2] <= 1'b1;
                   active_thread[(61*4)+3] <= 1'b1;
-                  spc61_inst_done         <= `ARIANE_CORE61.piton_pc_vld;
-                  spc61_phy_pc_w          <= `ARIANE_CORE61.piton_pc;
+                  spc61_inst_done         <= `TILE61.piton_pc_vld;
+                  spc61_phy_pc_w          <= `TILE61.piton_pc;
                 end
             end
     
@@ -2229,8 +2229,8 @@ endtask // get_thread_status
                   active_thread[(62*4)+1] <= 1'b1;
                   active_thread[(62*4)+2] <= 1'b1;
                   active_thread[(62*4)+3] <= 1'b1;
-                  spc62_inst_done         <= `ARIANE_CORE62.piton_pc_vld;
-                  spc62_phy_pc_w          <= `ARIANE_CORE62.piton_pc;
+                  spc62_inst_done         <= `TILE62.piton_pc_vld;
+                  spc62_phy_pc_w          <= `TILE62.piton_pc;
                 end
             end
     
@@ -2251,8 +2251,8 @@ endtask // get_thread_status
                   active_thread[(63*4)+1] <= 1'b1;
                   active_thread[(63*4)+2] <= 1'b1;
                   active_thread[(63*4)+3] <= 1'b1;
-                  spc63_inst_done         <= `ARIANE_CORE63.piton_pc_vld;
-                  spc63_phy_pc_w          <= `ARIANE_CORE63.piton_pc;
+                  spc63_inst_done         <= `TILE63.piton_pc_vld;
+                  spc63_phy_pc_w          <= `TILE63.piton_pc;
                 end
             end
     

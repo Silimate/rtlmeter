@@ -294,6 +294,9 @@ module NV_NVDLA_partition_m (
   ,mac2accu_pd //|> o
   ,mac2accu_pvld //|> o
   );
+
+/* verilator hier_block */
+
 //
 // NV_NVDLA_partition_m_io.v
 //

@@ -600,6 +600,9 @@ module NV_NVDLA_partition_c (
   ,sc2mac_wt_b_dst_pvld //|> o
   ,sc2mac_wt_b_dst_sel //|> o
   );
+
+/* verilator hier_block */
+
 //
 // NV_NVDLA_partition_c_io.v
 //

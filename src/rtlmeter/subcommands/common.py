@@ -26,11 +26,12 @@ from rtlmeter.descriptors import ExecuteDescriptor
 
 # fmt: off
 TAGS: Final[Dict[str, str]] = {
-    "sanity"    : "Very short cases suitable for quick functional sanity checking",
-    "standard"  : "Standard set of cases suitable for baseline performance evaluation",
+    "flaky"     : "Cases that might fail intermittently",
+    "hier"      : "Cases that can be run with verilator --hierarchical",
     "large"     : "Large cases that compile for a fairly long time ",
     "long"      : "Cases that execute for a fairly long time",
-    "flaky"     : "Cases that might fail intermittently"
+    "sanity"    : "Very short cases suitable for quick functional sanity checking",
+    "standard"  : "Standard set of cases suitable for baseline performance evaluation",
 }
 # fmt: on
 
