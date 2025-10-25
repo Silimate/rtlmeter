@@ -342,6 +342,8 @@ configurations:
         args:
           - +nCores=1
       tests:
+        hello:
+          tags: [ sanity ]
         token:
           args:
             - +iterations=1100
