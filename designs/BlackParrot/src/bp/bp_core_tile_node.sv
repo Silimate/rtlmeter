@@ -52,6 +52,8 @@ module bp_core_tile_node
    , output logic [S:N][dma_noc_ral_link_width_lp-1:0] dma_link_o
    );
 
+  /* verilator hier_block */
+
   // Declare the routing links
   `declare_bsg_ready_and_link_sif_s(coh_noc_flit_width_p, bp_coh_ready_and_link_s);
   `declare_bsg_ready_and_link_sif_s(dma_noc_flit_width_p, bp_dma_ready_and_link_s);

@@ -417,7 +417,7 @@ execute:
       files:
         - tests/hello/prog.mem
       tags:
-        - sanity
+        - hier
     dhry:
       files:
         - tests/dhry/prog.mem
@@ -429,6 +429,9 @@ configurations:
         BP_CFG_FLOWVAR: e_bp_multicore_1_cfg
     execute:
       tests:
+        hello:
+          tags:
+            - sanity
         cmark:
           args: [ +iterations=8 ]
           files:
