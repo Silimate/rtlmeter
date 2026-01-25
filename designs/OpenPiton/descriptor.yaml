@@ -352,6 +352,8 @@ configurations:
         fib:
           args:
             - +iterations=900
+          tags:
+            - standard
         dhry:
           args:
             - +iterations=6200
@@ -386,6 +388,8 @@ configurations:
         dhry:
           args:
             - +iterations=1700
+          tags:
+            - standard
   4x4:
     compile:
       verilogSourceFiles:

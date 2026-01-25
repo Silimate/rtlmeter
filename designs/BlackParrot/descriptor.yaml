@@ -436,6 +436,8 @@ configurations:
           args: [ +iterations=8 ]
           files:
             - tests/cmark/1x1/prog.mem
+          tags:
+            - standard
         dhry:
           args: [ +iterations=15000 ]
   2x2:
@@ -450,6 +452,8 @@ configurations:
             - tests/cmark/2x2/prog.mem
         dhry:
           args: [ +iterations=2200 ]
+          tags:
+            - standard
   4x4:
     compile:
       verilogDefines:
